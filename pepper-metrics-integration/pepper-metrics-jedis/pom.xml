@@ -4,7 +4,7 @@
     <parent>
         <artifactId>pepper-metrics-integration</artifactId>
         <groupId>top.zrbcool</groupId>
-        <version>1.0.20-SNAPSHOT</version>
+        <version>1.0.25-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
@@ -12,14 +12,14 @@
     <artifactId>pepper-metrics-jedis</artifactId>
     <name>${project.artifactId}</name>
     <description>${project.artifactId}</description>
-    <version>1.0.20-SNAPSHOT</version>
+    <version>1.0.25-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
             <groupId>top.zrbcool</groupId>
             <artifactId>pepper-metrics-core</artifactId>
-            <version>1.0.20-SNAPSHOT</version>
+            <version>1.0.25-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>redis.clients</groupId>
@@ -35,18 +35,12 @@
         <dependency>
             <groupId>top.zrbcool</groupId>
             <artifactId>pepper-metrics-scheduled-printer</artifactId>
-            <version>1.0.20-SNAPSHOT</version>
+            <version>1.0.25-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
             <version>1.7.26</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>1.2.17</version>
             <scope>test</scope>
         </dependency>
     </dependencies>

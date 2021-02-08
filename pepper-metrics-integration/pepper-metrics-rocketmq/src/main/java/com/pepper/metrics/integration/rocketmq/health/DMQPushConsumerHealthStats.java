@@ -29,12 +29,12 @@ public class DMQPushConsumerHealthStats extends HealthStatsDefault {
 
     @Override
     public String getType() {
-        return "rocketmq-consumer";
+        return "rocketmq";
     }
 
     @Override
     public String getSubType() {
-        return "default";
+        return "consumer";
     }
 
     public void collectMetrics() {
@@ -74,16 +74,17 @@ public class DMQPushConsumerHealthStats extends HealthStatsDefault {
             gaugeCollect("ConsumeRT", consumeStatus.getConsumeRT(), additionTags);
             gaugeCollect("PullRT", consumeStatus.getPullRT(), additionTags);
             gaugeCollect("PullTPS", consumeStatus.getPullTPS(), additionTags);
+            infoCollect();
         }
 
         @Override
         public String getType() {
-            return "rocketmq-consumer";
+            return "rocketmq";
         }
 
         @Override
         public String getSubType() {
-            return "default";
+            return "consumer";
         }
 
     }
